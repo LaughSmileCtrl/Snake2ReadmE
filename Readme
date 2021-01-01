@@ -1,0 +1,60 @@
+>>> teknis detail
+
+1. Saat project di mulai maka
+	a. atur nilai variable start menjadi 0
+	b. variable view bernilai 0
+	c. variable level bernilai 1.
+2. Jika sprite LevelMenu di klik maka atur variabel view menjadi 1.
+3. Jika sprite startMenu di klik maka 
+	a. atur variabel view menjadi 2
+	b. setDirection bernilai salah satu dari -90, 0, 90 dan 180  
+	c. variabel movemnt bernilai sesuai level dari element list speed
+	d. pasang backdrop backdrop2
+	e. pasang backdrop 3
+	f. tunggu 0.4 detik
+	g. pasang backdrop 2
+	h. tunggu 0.4 detik
+	i. pasang backdrop 1
+	j. tunggu 0.4 detik
+	k. ubah variabel start menjadi 1
+3. selalu cek nilai variabel view.
+	a. jika view bernilai 0 maka 
+		i. pasang backdrop1
+		ii. atur variabel point menjadi 0
+		iii. tampilkan sprite startMenu dan levelMenu, lalu sembunyikan sprite lainnya
+	b. jika view bernilai 1 maka tampilkan sprite EasyOption, MediumOption dan HardOption lalu sembunyikan sprite lainnya
+
+4. Jika EasyOption di klik maka
+	a. atur variabel level menjadi 1
+	b. atur variabel view menjadi 0
+5. Jika MediumOption di klik maka
+	a. atur variabel level menjadi 2
+	b. atur variabel view menjadi 0
+6. Jika HardOption di klik maka
+	a. atur variabel level menjadi 3
+	b. atur variabel view menjadi 0
+7. Selalu ulangi
+	a. bersihkan list lastDirection, lastX dan lastY
+	b. atur sprite point sehingga berada pada layer bawah
+	c. ulangi sampai nilai variabel start  samadengan 0
+		i. tampilkan sprite point
+		ii. tambah arah sprite point ke list lastDirection
+		iii. tambah posisi x sprite point ke list lastX
+		iv. tambah posisi y sprite point ke list lastY
+		v. pindahkan sprite point sebesar nilai variabel movemnt
+		vi. tampilkan sprite body
+		vii. ikuti dengan menggunakan library pen
+		viii. sesuiakan arah sprite body dengan arah terakhir dari list lastdirection
+		ix. sesuiakan posisi x sprite body dengan arah terakhir dari list lastX
+		x. sesuiakan posisi y sprite body dengan arah terakhir dari list lastY
+		xi. tampilkan sprite hider.
+		xii. jika banyak element di lastX lebih dari element sesuai level di maxCuter tambah nilai point
+			1. atur posisi x dari hider sesuai element pertama di lastX
+			2. atur posisi y dari hider sesuai element pertama di lastY
+		xiii. tampilkan sprite food
+		xiv. jika sprite makanan menyentuh sprite body
+			1. atur posisi x dan y sprite body di antara -165 sampai 165
+			2. tmbah nilai point sesuia level
+
+	d. sembunyikan sprite point, body, hider dan food
+	e. bersihkan pen
