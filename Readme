@@ -42,19 +42,25 @@
 		iii. tambah posisi x sprite point ke list lastX
 		iv. tambah posisi y sprite point ke list lastY
 		v. pindahkan sprite point sebesar nilai variabel movemnt
-		vi. tampilkan sprite body
-		vii. ikuti dengan menggunakan library pen
-		viii. sesuiakan arah sprite body dengan arah terakhir dari list lastdirection
-		ix. sesuiakan posisi x sprite body dengan arah terakhir dari list lastX
-		x. sesuiakan posisi y sprite body dengan arah terakhir dari list lastY
-		xi. tampilkan sprite hider.
-		xii. jika banyak element di lastX lebih dari element sesuai level di maxCuter tambah nilai point
+		vi. jika sprite menyentuh warna body/ warna pembatas maka ubah nilai start menjadi 0
+		vii. jika tombol panah atas di tekan dan arah sprite point tidak sama dengan 0/180 maka ubah arah sprite point menjadi 0
+		viii. jika tombol panah bawah di tekan dan arah sprite point tidak sama dengan 0/180 maka ubah arah sprite point menjadi 180
+		ix. jika tombol panah kanan di tekan dan arah sprite point tidak sama dengan 90/-90 maka ubah arah sprite point menjadi 90
+		x. jika tombol panah kiri di tekan dan arah sprite point tidak sama dengan 90/-90 maka ubah arah sprite point menjadi -90
+		xi. tampilkan sprite body
+		xii. ikuti dengan menggunakan library pen
+		xiii. sesuiakan arah sprite body dengan arah terakhir dari list lastdirection
+		xiv. sesuiakan posisi x sprite body dengan arah terakhir dari list lastX
+		xv. sesuiakan posisi y sprite body dengan arah terakhir dari list lastY
+		xvi. tampilkan sprite hider.
+		xvii. jika banyak element di lastX lebih dari element sesuai level di maxCuter tambah nilai point
 			1. atur posisi x dari hider sesuai element pertama di lastX
 			2. atur posisi y dari hider sesuai element pertama di lastY
-		xiii. tampilkan sprite food
-		xiv. jika sprite makanan menyentuh sprite body
+		xviii. tampilkan sprite food
+		xix. jika sprite makanan menyentuh sprite body
 			1. atur posisi x dan y sprite body di antara -165 sampai 165
 			2. tmbah nilai point sesuia level
 
 	d. sembunyikan sprite point, body, hider dan food
 	e. bersihkan pen
+	
