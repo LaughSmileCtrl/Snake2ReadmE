@@ -1,5 +1,21 @@
 >>> teknis detail
 
+/*Variable dan List*/
+level        -> sebagai penampung nilai level yang akan digunakan
+movemnt      -> berisi nilai perpindahan si "Snake". nilainya tergantung dari level yang user pilih
+point        -> menampung point yang telah user capai
+setDirection -> penampung arah gerak ular saat game baru dimulai yang dipilih secara acak
+start        -> (boolean) penampung variable status apakah game akan dimulai (bernilai 1) ataupun game over dan game masih belum dimulai(bernilai 0)
+view         ->  penampung status tampilan mana yang akan di tampilkan (bernilai antara 0, 1, 2).
+
+lastDirection -> Berisi catatan perubahan arah gerak sprite point
+lastX         -> Berisi catatan perubahan koordinat x sprite point
+lastY         -> Berisi catatan perubahan koordinat y sprite point
+maxCutter     -> Berisi pilihan seberapa banyak element lastX dan lastY (pilihan element sesuai level)
+speed         -> Berisi pilihan besaran perpindahan sprite point yang nantinya akan disalin ke variabel movemnt(pilihan element sesuai level)
+
+
+
 1. Saat project di mulai maka
 	a. atur nilai variable start menjadi 0
 	b. variable view bernilai 0
