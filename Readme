@@ -23,15 +23,14 @@ speed         -> Berisi pilihan besaran perpindahan sprite point(pilihan element
 3. Jika sprite startMenu di klik maka 
 	a. atur variabel view menjadi 2
 	b. setDirection bernilai salah satu dari -90, 0, 90 dan 180  
-	c. variabel movemnt bernilai sesuai level dari element list speed
-	d. pasang backdrop backdrop2
-	e. pasang backdrop 3
-	f. tunggu 0.4 detik
-	g. pasang backdrop 2
-	h. tunggu 0.4 detik
-	i. pasang backdrop 1
-	j. tunggu 0.4 detik
-	k. ubah variabel start menjadi 1
+	c. pasang backdrop backdrop2
+	d. pasang backdrop 3
+	e. tunggu 0.4 detik
+	f. pasang backdrop 2
+	g. tunggu 0.4 detik
+	h. pasang backdrop 1
+	i. tunggu 0.4 detik
+	j. ubah variabel start menjadi 1
 3. selalu cek nilai variabel view.
 	a. jika view bernilai 0 maka 
 		i. pasang backdrop1
